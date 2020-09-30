@@ -6,9 +6,9 @@
 
 ## Installation
 + from your project root:
-
-<pre><span style="background: #1c84c6; color: #000000">$ cd src/Pyz/Yves</span></pre>
-
+```shell script
+$ cd src/Pyz/Yves
+```
 + in src/Pyz/Yves:
 ```shell script
 $ git clone git@github.com:normanwaltercom/hello-spryker.git ./HelloWorld
