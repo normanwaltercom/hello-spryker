@@ -1,9 +1,21 @@
 {% extends template('page-layout-main') %}
 
 	{% define data = {
-        helloWorld: _view.helloWorld
+        helloWorld: _view.helloWorld,
+        param1: 'What a ...',
+        param2: 'Wiiiidgeeeet!!! ;-)'
     } %}
 
 	{% block content %}
         <div><h2>{{ data.helloWorld }}</h2></div>
+
+        {% widget 'HelloSprykerWidget' args [data.param1, data.param2] only %}
+            {% block body %}
+                <h1 style="text-transform: uppercase; color: #1ab394">
+                    {{ parent() }}
+                </h1>
+            {% endblock %}
+        {% nowidget %}
+            <h2 style="color: orangered;">display something else here... but no widget</h2>
+        {% endwidget %}
     {% endblock %}
