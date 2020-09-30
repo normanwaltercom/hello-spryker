@@ -6,14 +6,14 @@
 
 ## Installation
 + from your project root:
-```bash
-$ cd src/Pyz/Yves
-```
+
+<pre><span style="background: #1c84c6; color: #000000">$ cd src/Pyz/Yves</span></pre>
+
 + in src/Pyz/Yves:
-```bash
+```shell script
 $ git clone git@github.com:normanwaltercom/hello-spryker.git ./HelloWorld
 ```
 + When using docker/sdk go back to project root:
-```bash
+```shell script
 $ docker/sdk cache:emtpy-all
 ```
