@@ -15,7 +15,7 @@ class IndexController extends AbstractController
      */
     public function indexAction(Request $request)
     {
-        $data = ['helloWorld' => 'Hello Worldklljkl!'];
+        $data = ['helloWorld' => 'Hello World, I\'m a new spryker module!'];
 
         return $this->view(
             $data,
