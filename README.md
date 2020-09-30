@@ -1,6 +1,7 @@
 # Hello Spryker Example
 ## Requirements
-+ a b2b or b2c suite installation of Spryker
++ a b2b or b2c suite installation of Spryker version >= 202009.0
+    + Spryker installation: [docs/installation-guide-development-mode](https://documentation.spryker.com/docs/installation-guide-development-mode)
 + docker & docker-compose
 
 ## Installation
