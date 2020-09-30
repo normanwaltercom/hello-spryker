@@ -1,11 +1,17 @@
 {% extends template('widget') %}
 
 {% define data = {
+    theString: _widget.setString('A widget text passed to public function ->', '<- and the end of the string passed to setString method'),
     param1: _widget.param1,
     param2: _widget.param2 | default
 } %}
 
 {% block body %}
-    <span>{{ data.param1 }}</span>
-    <span>{{ data.param2 }}</span>
+    <h1 style="text-transform: uppercase; color: #1ab394; margin: 20px 0; padding: 15px 5px; box-shadow: 5px 0 15px 0 rgba(26,179,148, 0.8)">
+        <span>{{ data.param1 }}</span>
+        <span>{{ data.param2 }}</span>
+    </h1>
+
+    <h3 style="color: coral; margin: 20px 0">{{ data.theString }}</h3>
+
 {% endblock %}

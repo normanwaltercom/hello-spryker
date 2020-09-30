@@ -11,9 +11,7 @@
 
         {% widget 'HelloSprykerWidget' args [data.param1, data.param2] only %}
             {% block body %}
-                <h1 style="text-transform: uppercase; color: #1ab394">
-                    {{ parent() }}
-                </h1>
+                {{ parent() }}
             {% endblock %}
         {% nowidget %}
             <h2 style="color: orangered;">display something else here... but no widget</h2>

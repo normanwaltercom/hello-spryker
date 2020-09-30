@@ -39,4 +39,9 @@ class HelloSprykerWidget extends AbstractWidget
         // The template of the widget to be rendered by default.
         return '@HelloWorld/views/hello-spryker-widget/hello-spryker-widget.twig';
     }
+
+    public function setString($param1, $param2): string
+    {
+        return $param1 . ' **here comes another string between** ' . $param2;
+    }
 }
