@@ -5,6 +5,15 @@
 + docker & docker-compose
 
 ## Installation
-+ `$ cd src/Pyz/Yves`
-+ in src/Pyz/Yves: `$ git clone git@github.com:normanwaltercom/hello-spryker.git ./HelloWorld`
-+ When using docker/sdk go back to project root: `$ docker/sdk cache:emtpy-all`
++ from your project root:
+```bash
+$ cd src/Pyz/Yves
+```
++ in src/Pyz/Yves:
+```bash
+$ git clone git@github.com:normanwaltercom/hello-spryker.git ./HelloWorld
+```
++ When using docker/sdk go back to project root:
+```bash
+$ docker/sdk cache:emtpy-all
+```
