@@ -1,0 +1,10 @@
+{% extends template('widget') %}
+
+{% define data = {
+    param1: _widget.param1,
+    param2: _widget.param2 | default
+} %}
+
+{% block body %}
+    {# Render widget content here. #}
+{% endblock %}
