@@ -3,7 +3,9 @@
 	{% define data = {
         helloWorld: _view.helloWorld,
         param1: 'What a ...',
-        param2: 'Wiiiidgeeeet!!! ;-)'
+        param2: 'Wiiiidgeeeet!!! ;-)',
+        param3: 'Start string --+',
+        param4: '+-- End string'
     } %}
 
 	{% block content %}
@@ -16,4 +18,11 @@
         {% nowidget %}
             <h2 style="color: orangered;">display something else here... but no widget</h2>
         {% endwidget %}
+        <br>
+
+        {% if widgetGlobalExists('HelloSprykerWidget') %}
+            <div style="border: 2px dashed rgba(0, 0, 0, 0.6); padding: 15px;">
+                {% widget 'HelloSprykerWidget' args [data.param3, data.param4] only %}{% endwidget %}
+            </div>
+        {% endif %}
     {% endblock %}
